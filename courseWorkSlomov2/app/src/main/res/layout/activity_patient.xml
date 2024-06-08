@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        android:text="@string/medical_history_text"
+        />
+
+    <EditText
+        android:id="@+id/editFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/full_name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        android:inputType="number" />
+    <EditText
+        android:id="@+id/editHouse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/location" />
+
+
+    <EditText
+        android:id="@+id/editDiseases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/diseases_text" />
+
+    <EditText
+        android:id="@+id/editAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/allergy_text" />
+    <EditText
+        android:id="@+id/editHabits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bad_habits" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="2dp"
+        android:textSize="22sp"
+        android:textStyle=""
+        android:textColor="@color/black"
+        android:text="@string/recording_text"/>
+
+    <EditText
+        android:id="@+id/editDoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/select_specialist" />
+
+    <EditText
+        android:id="@+id/editDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/selecct_date_time" />
+
+    <EditText
+        android:id="@+id/editComplaints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/patient_complaints" />
+
+    <EditText
+        android:id="@+id/editReception"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/appointment_confirmed" />
+
+    <Button
+        android:id="@+id/btnAddPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="90dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/main_blue"
+        android:text="@string/add_a_note" />
+
+    <Button
+        android:id="@+id/backPatientBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16sp"
+        android:text="@string/back"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

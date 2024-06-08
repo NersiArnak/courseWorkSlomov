@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:text="@string/entrance"/>
+
+    <TextView
+        android:id="@+id/textViewMini"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="@color/dark_grey"
+        android:text="@string/patient_account"/>
+
+    <ImageView
+        android:id="@+id/imgReg"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/textViewTitle"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/unlocked"/>
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/imgReg"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_grey"
+        android:text="@string/login"/>
+
+    <EditText
+        android:id="@+id/editEmailPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewLogin"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/textPasswordPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/editEmailPatient"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_grey"
+        android:text="@string/password"/>
+
+    <EditText
+        android:id="@+id/editPasswordPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textPasswordPatient"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/buttonSignInP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/main_blue"
+        android:layout_marginHorizontal="140dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/to_come_in"
+        android:layout_below="@id/editPasswordPatient"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+
+    <Button
+        android:id="@+id/backSignUpPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:layout_marginHorizontal="100dp"
+        android:textSize="16sp"
+        android:text="@string/back"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
